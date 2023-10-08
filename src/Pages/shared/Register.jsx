@@ -16,29 +16,29 @@ const Register = () => {
         <div>
         <Navbar></Navbar>
         <div>
-            <h2 className="text-3xl my-10 text-center">Please Register</h2>
+            <h2 className="text-3xl my-10 text-center font-semibold">Please Register</h2>
             <form onSubmit={handleRegister} className=" md:w-3/4 lg:w-1/2 mx-auto">
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Name</span>
+                        <span className="label-text text-lg">Name</span>
                     </label>
                     <input type="text" required name="name" placeholder="Name" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Photo URL</span>
+                        <span className="label-text text-lg">Photo URL</span>
                     </label>
                     <input type="text" required name="photo" placeholder="Photo URL" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className="label-text text-lg">Email</span>
                     </label>
                     <input type="email" required name="email" placeholder="Email" className="input input-bordered" />
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Password</span>
+                        <span className="label-text text-lg">Password</span>
                     </label>
                     <input type="password" required name="password" placeholder="Password" className="input input-bordered" />
                     <label className="label">
@@ -46,7 +46,7 @@ const Register = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                    <button className="btn btn-info">Register</button>
                 </div>
             </form>
             <p className="text-center mt-4">Already have an account? <Link className="text-blue-600 font-bold" to="/login">Login</Link></p>
